@@ -1,0 +1,391 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+h3{
+    text-align: center;
+    color: #ffffff;
+    padding-top: 4rem;
+}
+body{
+    background-color: #EAEAEA;
+}
+/*Header*/
+header{
+    height: 10rem;
+    background: #1D2C4D;
+    padding: 0rem 5.0rem;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+h2{
+    color:#000000 ;
+    text-decoration: underline;
+    text-decoration-color:#000000 ;
+    font-size: 2.8rem;
+}
+h1{
+    color:#000000 ;
+    text-decoration: underline;
+    text-decoration-color:#000000 ;
+    font-size: 2.8rem;
+}
+.logo{
+    margin: 0 auto;
+    display: block;
+    position: relative;
+    
+}
+.navegador a{
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 0rem 1.0rem;
+    transition: 0.4s;
+}
+
+.esconder-menu,
+.mostrar-menu{
+    font-size: 5.0rem;
+    display: none;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.mostrar-menu{
+    order: 1;
+}
+.navegador a{
+    margin-left: 0.5rem;
+    font-size: 1.6rem;
+}
+
+.navegador a:hover{
+    background-color: #03bb85;
+    color: #fff;
+    font-size: 2.0rem;
+    border-radius: 3.0rem;
+    transition: 0.4s;
+}
+
+.esconder-menu:hover,
+.mostrar-menu:hover{
+    color: #03bb85;
+    transition: 0.4s;
+}
+
+#check{
+    display: none;
+}
+
+/* banner */
+.banner{
+    padding: 0 5rem;
+    background-image: url(../Assets/Images/Banner-inicial.png);
+    height: 50vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    /* flex-direction: column; */
+    grid-area: banner;
+}
+.banner::before{
+    content: '';
+    background: rgba(77, 77, 92, 0.6);
+    position: absolute;
+    width: 100%;
+    height: 50vh;
+    left: 0;
+}
+
+/* MAIN */
+.grid-index{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(2,50vw);
+    grid-template-rows: 50vh 65vh 50vh ;
+    grid-template-areas:
+    "banner banner" 
+    "textob imgb"
+    "quienes quienes";
+    justify-items: center;
+    grid-row-gap: 10rem;
+}
+
+/* BIENVENIDOS */
+
+.bienvenidos-text{
+    background-color: #ffffff;
+    border-radius: 3rem;
+    margin: 5rem;
+    height: fit-content;
+    grid-area: textob;
+}
+
+.bienvenidos-text h1{
+    text-align: center;
+    font-size: 3rem;
+    width: 43.5vw;
+    padding-top: 2.5rem;
+    margin: 0px;
+    padding-bottom: 1rem;
+}
+.bienvenidos-text p{
+    font-size: 2.5rem;
+    color: #000000;
+    width: fit-content;
+    /* height: 50vh; */
+    height: fit-content;
+    text-align: justify;
+    margin: 0vh 1vw;
+    margin-bottom: 2vh;
+
+}
+
+.bienvenidos-img{
+    /* background-color: #ffffff; */
+    border-radius: 3rem;
+    margin: 5rem;
+    height: auto;
+    grid-area: imgb;
+}
+
+.bienvenidos-img img{
+    width: 42.01vw;
+    /* height: 50vh; */
+    height: 100%;
+    margin: 0rem;
+}
+
+/* Quienes-somos  */
+
+.quienes-somos{
+    grid-area: quienes;
+    background-color: #ffffff;
+    border-radius: 3rem;
+    align-items: center;
+    height: fit-content;
+    /* margin: 4.63vh 13.02vw; */
+    margin: 0 13.02vw;
+}
+.quienes-somos h2{
+    text-align: center;
+    font-size: 3rem;
+    width: 69.97vw;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+
+}
+
+.quienes-somos p{
+    font-size: 2.5rem;
+    color: #000000;
+    /* width: 69.97vw; */
+    /* height: 35.74vh; */
+    width: fit-content;
+    height: fit-content;
+    text-align: justify;
+    align-self: center;
+    margin: 0vh 2vw;
+    margin-bottom: 2vh;
+}
+
+/* Footer */
+footer{
+    background-color: #1D2C4D;
+    margin-top: 20rem;
+    height: 15rem;
+    justify-content: center;
+    text-align: center;
+    text-decoration: none;
+    
+}
+footer a{
+    font-size: 5rem;
+    text-align: center;
+    justify-content: center;
+    color: #ffffff;
+    transition: 0.4s;
+    margin:2.5rem;
+    
+}
+footer a:hover{
+    font-size: 5.5rem;
+    color: #03bb85;
+    
+}
+/* RESPONSIVE */
+
+
+@media(max-width: 1365px){
+    /* NAV */
+    .mostrar-menu,
+    .esconder-menu{ 
+        display: block;
+    }
+
+    .navegador a:hover{
+    color: #ffffff;
+    transition: 0.4s;
+    border-radius: 0%;
+    padding-left: 0%;
+    margin-left: 0%;
+    }
+    .navegador{
+        position: fixed;
+        width: 100%;
+        height: 192rem;
+        background: #1D2C4D;
+        right: -100%;
+        top: 0;
+        text-align: center;
+        padding: 10rem 0rem;
+        z-index: 100;
+        transition: 0.8s;
+    }
+    .navegador a{
+        display: block;
+        padding: 2rem;
+    }
+    .esconder-menu{
+        position: absolute;
+        top: 4rem;
+        right: 4rem;
+    }
+    #check:checked ~ .navegador{
+        right: 0;
+    }
+
+    /* INDEX */
+    .grid-index{
+        grid-template-rows: 50vh repeat(2, 45vh) 65vh;
+        grid-template-columns: 100vw;
+        grid-template-areas: 
+        "banner"
+        "textob"
+        "imgb"
+        "quienes";
+        grid-row-gap: 10rem;
+    }
+    .bienvenidos-text{
+        margin: 0rem 5rem;
+        height: fit-content;
+    }
+    .bienvenidos-text p{
+        width: fit-content;
+        font-size: 2.3rem;
+        margin: 2rem;
+        margin-top: 0;
+        height: fit-content;
+    }
+    .bienvenidos-text h1{
+        font-size: 3rem;
+        width: auto;
+        text-align: center;
+        padding: 1rem 2rem 1rem 2rem;
+
+    }
+    .bienvenidos-img{
+        margin: 0rem;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+    .bienvenidos-img img{
+        width: 60vw;
+        height: 45vh;
+        margin: 0rem 20vw;
+    }
+    .quienes-somos{
+        width: fit-content;
+        margin: 0rem 5rem;
+        
+        
+    }
+    .quienes-somos h2{
+        align-self: center;
+        padding: 2rem 2vw 1rem 2vw;
+        width: 100%;
+
+    }
+
+}
+@media(max-width: 750px){
+    /* INDEX */
+    
+    .bienvenidos-text p{
+        width: fit-content;
+        font-size: 2.0rem;
+        margin: 2rem;
+        margin-top: 0;
+        height: fit-content;
+    }
+    .bienvenidos-text h1{
+        font-size: 3rem;
+        width: auto;
+        text-align: center;
+        padding: 1rem 2rem 1rem 2rem;
+    }
+    .quienes-somos p{
+        font-size: 2rem;
+    }
+    .bienvenidos-img img{
+        width: 75vw;
+        margin: 0 9.375rem;
+    }
+
+}
+@media(max-width: 400px){
+    .grid-index{
+        grid-template-rows: 25vh 80vh 50vh 110vh;
+        width: 100%;
+    }
+    .banner{
+        padding: 0;
+        width: 100%;
+        height: 25vh;
+    }
+    .banner::before{
+        height: 25vh;
+    }
+    
+    .logo{
+        position: relative;
+        width: 50%;
+        margin-top: 2.5rem;
+    }
+    .bienvenidos-text{
+        width: 100%;
+        margin: 0;
+    }
+    .bienvenidos-img img{
+        margin-left: 5rem;
+        margin-right: 0rem;
+        align-self: center;
+    }
+    .quienes-somos{
+        width: 100%;
+    }
+    footer a{
+        font-size: 3rem;
+        margin:2.5rem 2.5rem;
+        
+    }
+    footer a:hover{
+        font-size: 3rem;
+        color: #03bb85;
+    }
+    footer h3{
+        font-size: 1rem;
+        padding-top: 2rem;
+    }
+}
