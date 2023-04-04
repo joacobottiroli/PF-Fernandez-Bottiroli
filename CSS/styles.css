@@ -42,7 +42,7 @@ h1{
     margin: 0 auto;
     display: block;
     position: relative;
-    
+    height: 44.54vh;
 }
 .navegador a{
     color: #fff;
@@ -112,7 +112,7 @@ h1{
     height: 100%;
     display: grid;
     grid-template-columns: repeat(2,50vw);
-    grid-template-rows: 50vh 65vh 50vh ;
+    grid-template-rows: auto auto auto ;
     grid-template-areas:
     "banner banner" 
     "textob imgb"
@@ -155,14 +155,12 @@ h1{
     /* background-color: #ffffff; */
     border-radius: 3rem;
     margin: 5rem;
-    height: auto;
     grid-area: imgb;
 }
 
 .bienvenidos-img img{
-    width: 42.01vw;
+    /* width: 42.01vw; */
     /* height: 50vh; */
-    height: 100%;
     margin: 0rem;
 }
 
@@ -267,7 +265,7 @@ footer a:hover{
 
     /* INDEX */
     .grid-index{
-        grid-template-rows: 50vh repeat(2, 45vh) 65vh;
+        grid-template-rows: repeat(4,auto);
         grid-template-columns: 100vw;
         grid-template-areas: 
         "banner"
@@ -302,7 +300,6 @@ footer a:hover{
     }
     .bienvenidos-img img{
         width: 60vw;
-        height: 45vh;
         margin: 0rem 20vw;
     }
     .quienes-somos{
@@ -319,7 +316,7 @@ footer a:hover{
     }
 
 }
-@media(max-width: 750px){
+@media(max-width: 860px){
     /* INDEX */
     
     .bienvenidos-text p{
@@ -327,7 +324,7 @@ footer a:hover{
         font-size: 2.0rem;
         margin: 2rem;
         margin-top: 0;
-        height: fit-content;
+        height: 100%;
     }
     .bienvenidos-text h1{
         font-size: 3rem;
@@ -339,8 +336,8 @@ footer a:hover{
         font-size: 2rem;
     }
     .bienvenidos-img img{
-        width: 75vw;
-        margin: 0 9.375rem;
+        /* width: 75vw;
+        margin: 0 9.375rem; */
     }
 
 }
