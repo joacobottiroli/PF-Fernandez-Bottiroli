@@ -15,7 +15,7 @@ h3{
 body{
     background-color: #EAEAEA;
 }
-/*Header*/
+/*****************************************************Header******************************************/
 header{
     height: 10rem;
     background: #1D2C4D;
@@ -87,7 +87,7 @@ h1{
     display: none;
 }
 
-/* banner */
+/**************************************************** banner **************************************************/
 .banner{
     padding: 0 5rem;
     background-image: url(../Assets/Images/Banner-inicial.png);
@@ -105,8 +105,7 @@ h1{
     left: 0;
 }
 
-/* MAIN */
-/* BIENVENIDOS */
+/* *****************************************************************INDEX***************************************** */
 .bienvenidos-text{
     border-radius: 3rem;
     margin: 5rem 1.5rem;
@@ -126,18 +125,13 @@ h1{
     height: fit-content;
     text-align: justify;
 }
-
 .bienvenidos-img{
     margin: 5rem 1.5rem;
 }
-
 .bienvenidos-img img{
     border-radius: 3rem;
     align-self: center;
 }
-
-/* Quienes-somos  */
-
 .quienes-somos{
     border-radius: 3rem;
     margin: 5rem;
@@ -163,7 +157,7 @@ h1{
     margin-bottom: 2vh;
 }
 
-/* Footer */
+/* ********************************FOOTER**************************************************** */
 footer{
     background-color: #1D2C4D;
     margin-top: 20rem;
@@ -186,8 +180,6 @@ footer a:hover{
     color: #03bb85;
     
 }
-/* RESPONSIVE */
-
 .footer-grid{
     display: grid;
     grid-template-columns: repeat(4,1fr);
@@ -214,7 +206,7 @@ footer a:hover{
     grid-area: dchos;
     padding-top: 0;
 }
-
+/* ***************************************************GALERIA************************************************* */
 .galeria{
     width: 50%;
     height: 50%;
@@ -231,7 +223,7 @@ footer a:hover{
 }
 
 @media(max-width: 1365px){
-    /* NAV */
+    /* ********************************INDEX************************************************************************ */
     .mostrar-menu,
     .esconder-menu{ 
         display: block;
@@ -271,6 +263,7 @@ footer a:hover{
 
 }
 @media(max-width: 1024px){
+    /* ********************************INDEX************************************************************************ */
     .bienvenidos-text{
         width: 100%;
         border-radius: 0;
@@ -285,7 +278,7 @@ footer a:hover{
     }
 }
 @media(max-width: 860px){
-    /* INDEX */
+     /* ********************************INDEX************************************************************************ */
     
     .bienvenidos-text p{
         width: fit-content;
@@ -303,8 +296,15 @@ footer a:hover{
     .quienes-somos p{
         font-size: 2rem;
     }
+    /* ***************************************************GALERIA************************************************* */
+    .galeria{
+        width: 75%;
+        height: 75%;
+        left: 15%;
+    }
 }
 @media(max-width: 425px){
+    /* ********************************INDEX************************************************************************ */
     .bienvenidos-text h1{
         font-size: 2.5rem;
     }
@@ -316,5 +316,11 @@ footer a:hover{
     }
     .quienes-somos p{
         font-size: 1.5rem;
+    }
+/* ***************************************************GALERIA************************************************* */
+    .galeria{
+        width: 100%;
+        height: 100%;
+        left: 0;
     }
 }
