@@ -31,5 +31,34 @@
             color:#000000 ;
             font-size: 1rem; 
         }
-}
+    }
+
+    .card{
+        width: 100%;
+        div{
+            div{
+                img{
+                    display: block;
+                    margin: auto;
+                    padding-top: 60%;
+                }
+                div{
+                    h5{
+                        font-size: 1.5rem;
+                    }
+                    p{
+                        font-size: 1rem;
+                    }
+                }
+            }
+        }
+    }
+    .profesionales-txt{
+        h2{
+            font-size: 2rem;
+        }
+        p{
+            font-size: 1rem;
+        }
+    }
 }

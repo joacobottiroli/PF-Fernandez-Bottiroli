@@ -2,7 +2,8 @@
   margin: 0px;
   padding: 0px;
   font-family: 'Poppins', sans-serif;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  font-weight: 700; }
 
 body {
   background-color: #EAEAEA; }
@@ -10,26 +11,58 @@ body {
 html {
   font-size: 62.5%; }
 
+h5 {
+  color: #000000;
+  font-weight: 700; }
+
+h4 {
+  color: #000000;
+  text-decoration: underline;
+  text-decoration-color: #000000;
+  font-weight: 700; }
+
 h3 {
   text-align: center;
   color: #ffffff;
-  padding-top: 4rem; }
+  padding-top: 4rem;
+  font-weight: 700; }
 
 h2 {
   color: #000000;
   text-decoration: underline;
   text-decoration-color: #000000;
-  font-size: 4rem; }
+  font-size: 4rem;
+  font-weight: 700; }
 
 h1 {
   color: #000000;
   text-decoration: underline;
   text-decoration-color: #000000;
-  font-size: 2.8rem; }
+  font-size: 2.8rem;
+  font-weight: 700; }
 
 p {
   color: #000000;
   font-size: 2rem; }
+
+.card-text {
+  font-size: 1.5rem;
+  overflow: scroll;
+  max-height: 250px;
+  font-weight: 200;
+  overflow-x: hidden; }
+  .card-text::-webkit-scrollbar {
+    background-color: #ffffff;
+    width: 0.5rem; }
+  .card-text::-webkit-scrollbar-thumb {
+    background: #1D2C4D;
+    border-radius: 4px; }
+
+.card-title {
+  font-size: 2rem; }
+
+.card {
+  border-radius: 1rem; }
 
 header {
   height: 10rem;
@@ -186,6 +219,10 @@ footer {
     margin: 0vh 2vw;
     margin-bottom: 2vh; }
 
+.img-profesional {
+  border-radius: 10%;
+  margin-top: 2rem; }
+
 .galeria {
   width: 50%;
   height: 50%;
@@ -298,7 +335,17 @@ footer {
     font-size: 2.5rem; }
   .contactenos p {
     color: #000000;
-    font-size: 1.25rem; } }
+    font-size: 1.25rem; }
+  .card {
+    width: 100%; }
+    .card div div div h5 {
+      font-size: 2rem; }
+    .card div div div p {
+      font-size: 1.5rem; }
+  .profesionales-txt h2 {
+    font-size: 2.5rem; }
+  .profesionales-txt p {
+    font-size: 1.5rem; } }
 
 @media (max-width: 425px) {
   .bienvenidos-text h1 {
@@ -320,4 +367,18 @@ footer {
     font-size: 1.5rem; }
   .contactenos p {
     color: #000000;
+    font-size: 1rem; }
+  .card {
+    width: 100%; }
+    .card div div img {
+      display: block;
+      margin: auto;
+      padding-top: 60%; }
+    .card div div div h5 {
+      font-size: 1.5rem; }
+    .card div div div p {
+      font-size: 1rem; }
+  .profesionales-txt h2 {
+    font-size: 2rem; }
+  .profesionales-txt p {
     font-size: 1rem; } }
