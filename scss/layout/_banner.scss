@@ -1,0 +1,17 @@
+.banner{
+    padding: 0 5rem;
+    background-image: url(../Assets/Images/Banner-inicial.png);
+    height: auto;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    &::before{
+        content: '';
+        background: rgba(77, 77, 92, 0.6);
+        position: absolute;
+        width: 100%;
+        height: auto;
+        left: 0;
+    }
+}
+

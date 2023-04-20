@@ -1,0 +1,13 @@
+.contactenos-main{
+    height: 50rem;
+    margin-top: 5rem;
+}
+.boton-contactenos{
+    background-color: $bg-header-footer;
+    width: 100%;
+    color:  $color-letras-footer-header;
+    &:hover{
+        background-color: $bg-hover;
+        color: $color-letras-footer-header;
+    }
+}

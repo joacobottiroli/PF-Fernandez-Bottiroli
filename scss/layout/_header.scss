@@ -1,0 +1,46 @@
+header{
+    height: 10rem;
+    background-color: $bg-header-footer;
+    color: $color-letras-footer-header;
+    width: 100%;
+    @include flex(space-between, center, row, 0 5rem)
+}
+.logo{
+    margin: 0;
+    display: block;
+    position: relative;
+    height: auto;
+    margin: auto auto;
+}
+.navegador a{
+    color: $color-letras-footer-header;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 0rem 1.0rem;
+    margin-left: 0.5rem;
+    font-size: 1.6rem;
+    transition: 0.4s;
+    &:hover{
+       @include hover($bg-hover, $color-letras-footer-header, 2.0rem, 3rem,0.4s)
+    }
+}
+
+.esconder-menu,
+.mostrar-menu{
+    font-size: 5.0rem;
+    display: none;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.mostrar-menu{
+    order: 1;
+}
+.esconder-menu:hover,
+.mostrar-menu:hover{
+    @include hover(none, $bg-hover, 5.0rem, 3rem,0.4s)
+}
+
+#check{
+    display: none;
+}

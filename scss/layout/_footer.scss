@@ -1,0 +1,45 @@
+footer{
+    background-color: $bg-header-footer;
+    margin-top: 20rem;
+    height: 15rem;
+    justify-content: space-evenly;
+    text-align: center;
+    text-decoration: none;
+    a{
+        font-size: 5rem;
+        text-align: center;
+        justify-content: center;
+        color: $color-letras-footer-header;
+        transition: 0.4s;
+        &:hover{
+            @include hover(none, $bg-hover, 6rem, 0, 0.4s)
+        }
+    }
+    
+}
+.footer-grid{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(2,auto);
+    grid-template-areas:
+    "fbook twt ig lkn "
+    "dchos dchos dchos dchos" 
+    ;
+}
+
+.fbook{
+    grid-area: fbook;
+}
+.twt{
+    grid-area: twt;
+}
+.ig{
+    grid-area: ig;
+}
+.lkn{
+    grid-area: lkn;
+}
+.dchos{
+    grid-area: dchos;
+    padding-top: 0;
+}

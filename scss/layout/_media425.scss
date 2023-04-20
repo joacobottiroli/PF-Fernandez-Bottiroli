@@ -1,0 +1,23 @@
+@media(max-width: 425px){
+    .bienvenidos-text{
+        h1{
+            font-size: 2.5rem;
+        }
+        p{
+            font-size: 1.5rem;  
+        }
+    }
+    .quienes-somos{
+        h1{
+        font-size: 2.5rem;
+        }
+        p{
+        font-size: 1.5rem;
+        }
+    }
+    .galeria{
+        width: 100%;
+        height: 100%;
+        left: 0;
+    }
+}

@@ -30,5 +30,73 @@
                 </label>
         </nav>
     </header>
+    <main>
+        <div class="contactenos-main">
+            <div class="w-50 mx-auto bg-white rounded-4 text-center">
+                <h2>¡CONTACTENOS!</h2>
+                <p>Escribe tus comentarios en nuestro formulario de contacto y tan pronto sea recibido te contactaremos.</p>
+            </div>
+            <div class="w-50 mx-auto">
+                <form class="row g-3 needs-validation" novalidate>
+                    <div class="col-6 sm-12 position-relative">
+                        <input type="text" class="form-control" placeholder="Nombre" aria-label="First name" required>
+                        <div class="invalid-tooltip">
+                            Es necesario poner el nombre.
+                        </div>
+                    </div>
+                    <div class="col-6 sm-12 position-relative">
+                        <input type="text" class="form-control" placeholder="Apellido" aria-label="Last name" required>
+                        <div class="invalid-tooltip">
+                            Es necesario poner el apellido.
+                        </div>
+                    </div>
+                    <div class="col-12 position-relative">
+                        <input type="Email" class="form-control" placeholder="Email" aria-label="First name" required>
+                        <div class="invalid-tooltip">
+                            Es necesario poner el email.
+                        </div>
+                    </div>
+                    <div class="col-12 position-relative">
+                        <input type="tel" class="form-control" placeholder="Telefono" aria-label="First name" required>
+                        <div class="invalid-tooltip">
+                            Es necesario poner tu telefono.
+                        </div>
+                    </div>
+                    <div class="col-12 position-relative">
+                        <label for="Comentarios" class="form-label">Comentarios</label>
+                        <textarea class="form-control" id="Comentarios" rows="10" required></textarea>
+                        <div class="invalid-tooltip">
+                            Escribe para que nos quieres contactar.
+                        </div>
+                    </div>
+                    <div>
+                        <button type="submbit" class="btn boton-contactenos">Enviar</button>
+                    </div>
+                </form>
+            </div>
+        </div>  
+    </main>
+    <footer class="footer-grid">
+        <a href="https://www.facebook.com/OdontologiaAlcorta" target="_blank"><i class="fa-brands fa-facebook fbook"></i></a>
+        <a href="https://twitter.com/oalcorta" target="_blank"><i class="fa-brands fa-twitter twt"></i></a>
+        <a href="https://www.instagram.com/odontologiaalcorta/" target="_blank"><i class="fa-brands fa-instagram ig"></i></a>
+        <a href="https://ar.linkedin.com/in/odontologia-alcorta-4707a1a1" target="_blank"><i class="fa-brands fa-linkedin lkn"></i></a>
+        <h3 class="dchos">ODONTOLOGÍA ALCORTA. Todos los derechos reservados.</h3>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <script>
+        (() => {
+          'use strict'
+          const forms = document.querySelectorAll('.needs-validation')
+          Array.from(forms).forEach(form => {
+            form.addEventListener('submit', event => {
+              if (!form.checkValidity()) {
+                event.preventDefault()
+                event.stopPropagation()
+              }
+        
+              form.classList.add('was-validated')
+            }, false)
+          })
+        })()</script>
 </body>

@@ -1,0 +1,50 @@
+.bienvenidos-text{
+    border-radius: 3rem;
+    margin: 5rem 1.5rem;
+    justify-content: center;
+    align-self: center;
+    width: 50%;
+    p{
+        font-size: 2.5rem;
+        color: $color-letras-cuadros-texto;
+        width: fit-content;
+        height: fit-content;
+        text-align: justify;
+    }
+    h1{
+        text-align: center;
+        color:$color-letras-cuadros-texto;
+        font-size: 3rem;
+        width: 100%;
+    }
+}
+.bienvenidos-img{
+    margin: 5rem 1.5rem;
+    img{
+        border-radius: 3rem;
+        align-self: center;
+    }
+}
+.quienes-somos{
+    border-radius: 3rem;
+    margin: 5rem;
+    width: 75%;
+    h2{
+        text-align: center;
+        color: $color-letras-cuadros-texto;
+        font-size: 3rem;
+        padding-top: 2rem;
+        padding-bottom: 1rem;
+    
+    }
+    p{
+        font-size: 2.5rem;
+        color: $color-letras-cuadros-texto;
+        width: auto;
+        height: fit-content;
+        text-align: justify;
+        align-self: center;
+        margin: 0vh 2vw;
+        margin-bottom: 2vh;  
+    }
+}

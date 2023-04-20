@@ -1,0 +1,15 @@
+@mixin flex($justify, $align, $direction, $padding){
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+    flex-direction: $direction;
+    padding: $padding;
+}
+
+@mixin hover($bg-color, $color, $font-size, $border-radius, $transition){
+    background-color: $bg-color;
+    color: $color;
+    font-size: $font-size;
+    border-radius: $border-radius;
+    transition: $transition;
+}
