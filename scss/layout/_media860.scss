@@ -59,4 +59,19 @@
             font-size: 1.5rem;
         }
     }
+    .card-text{
+        font-size: 1.5rem;
+        overflow:scroll;
+        max-height: 200px;
+        font-weight: 200;
+        overflow-x: hidden;
+        &::-webkit-scrollbar{
+            background-color: $bg-cuadros-texto;
+            width:0rem
+        }
+        &::-webkit-scrollbar-thumb{
+            background: $bg-header-footer;
+            border-radius: 4px;
+        }
+    }
 }
