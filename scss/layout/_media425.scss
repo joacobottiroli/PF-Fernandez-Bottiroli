@@ -62,4 +62,54 @@
             font-size: 1rem;
         }
     }
+    .main-especialidades{
+        padding: 0;
+        div{
+            h5{
+                font-size: 1rem;
+            }
+            p{
+                font-size: 0.8rem;
+            }
+        }
+    }
+    .sec1{
+        h2{
+            grid-area: titulo;
+            align-self: flex-end;
+            font-size: 3rem;
+        }
+        p{
+            grid-area: desc;
+            align-self: flex-start;
+            text-align: center;
+            font-size: 1.5rem;
+        }
+    }
+    .sec2{
+        h2{
+            grid-area: titulo;
+            align-self: flex-end;
+            font-size: 3rem;
+        }
+        p{
+            grid-area: desc;
+            align-self: flex-start;
+            text-align: center;
+            font-size: 1.5rem;
+        }
+    }
+    .sec3{
+        h2{
+            grid-area: titulo;
+            align-self: flex-end;
+            font-size: 3rem;
+        }
+        p{
+            grid-area: desc;
+            align-self: flex-start;
+            text-align: center;
+            font-size: 1.5rem;
+        }
+    }
 }
