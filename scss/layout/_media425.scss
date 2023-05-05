@@ -18,7 +18,9 @@
     .galeria{
         width: 100%;
         height: 100%;
-        left: 0;
+        div{
+            padding: 2rem 0;
+        }
     }
     .contactenos{
         h2{
@@ -64,13 +66,14 @@
     }
     .main-especialidades{
         height: 100vh;
-        padding: 0;
+        padding: 1rem 0;
         div{
+            margin: 0;
             h5{
-                font-size: 1rem;
+                font-size: 1.2rem;
             }
             p{
-                font-size: 0.8rem;
+                font-size: 1rem;
             }
         }
     }

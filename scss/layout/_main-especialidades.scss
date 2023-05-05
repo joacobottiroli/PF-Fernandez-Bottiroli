@@ -1,7 +1,8 @@
 .main-especialidades{
-    @include flex(space-between, center, row, 5rem);
+    @include flex(space-evenly, center, row, 4rem);
     flex-wrap: nowrap;
     height: 100%;
+    width: 100%;
 }
 
 .grid-especialidades{
@@ -33,11 +34,13 @@
     h2{
         grid-area: titulo;
         align-self: flex-end;
+        padding: 2rem;
     }
     p{
         grid-area: desc;
         align-self: flex-start;
         text-align: center;
+        padding: 2rem;
     }
 }
 .sec2{
@@ -59,11 +62,13 @@
     h2{
         grid-area: titulo;
         align-self: flex-end;
+        padding: 2rem;
     }
     p{
         grid-area: desc;
         align-self: flex-start;
         text-align: center;
+        padding: 2rem;
     }
 }
 .sec3{
@@ -85,10 +90,12 @@
     h2{
         grid-area: titulo;
         align-self: flex-end;
+        padding: 2rem;
     }
     p{
         grid-area: desc;
         align-self: flex-start;
         text-align: center;
+        padding: 2rem;
     }
 }

@@ -1,9 +1,16 @@
 .galeria{
-    width: 50%;
-    height: 50%;
-    display: flex;
-    margin-top: 10rem   ;
-    left: 25%;
+        div{
+            margin: 0;
+            padding: 2.5rem;
+            img{
+                width: 100%;
+                height: 25rem;
+                transition: 0.4s;
+                &:hover{
+                    transform: scale(1.1);
+                }
+            }
+        }
 }
 .galeria-title{
     margin-top: 5rem;
